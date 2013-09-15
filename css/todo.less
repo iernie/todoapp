@@ -1,0 +1,85 @@
+body {
+	background: #f1f1f1 url(../img/stripe.png);
+	padding: 0;
+	font-family: "Roboto Condensed";
+}
+
+#todoApp {
+	width: 500px;
+	margin: auto;
+	background: #eee;
+	padding: 0 20px 20px 20px;
+	box-sizing: border-box;
+	box-shadow: 0 2px 1px rgba(0,0,0,0.2);
+	border-radius: 3px;
+
+	.app-title {
+		font-size: 4em;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 20px 0 0 0;
+		margin-right: -20px;
+
+		span {
+			font-size: 0.2em;
+		}
+	}
+
+	#addItemForm {
+		input {
+			width: 100%;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+	}
+
+	.item-list {
+		list-style-type: none;
+		padding-left: 0;
+		box-sizing: border-box;
+
+		li {
+			font-size: 1.2em;
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			margin-bottom: 10px;
+			padding: 0 0 5px 0;
+			text-transform: capitalize;
+			clear: both;
+
+			.list-item-options {
+				font-size: 0.7em;
+				float: right;
+				margin-top: 3px;
+
+				a {
+					text-decoration: underline;
+					color: #000;
+					margin-left: 8px;
+
+					&:hover {
+						color: red;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 900px) {
+
+	#todoApp {
+		width: 80%;
+	}
+}
+
+@media all and (max-width: 700px) {
+
+	body {
+		padding: 0 10px;
+		margin: 0;
+	}
+
+	#todoApp {
+		width: 100%;
+	}
+}
